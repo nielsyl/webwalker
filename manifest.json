@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Webwalker",
+  "version": "2.7",
+  "description": "A stick-figure spider walks over the page and plants its legs on usernames, handles, dates and view counts. Press Alt+S to toggle.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
